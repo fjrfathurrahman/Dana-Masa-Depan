@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/** Variables  */
+:root {
+  --primary: #705df8;
+  --secondary: ;
+  --tinery: ;
+  --light: #f3f4f6;
+  --dark: #111827;
+
+  --bg: #f4f4f5;
+  --font: "Poppins", sans-serif;
+  --paragraph: #4b5563;
+  --headline: #030712;
+
+  --gradient-red: ;
+  --gradient-purple: ;
+  --gradient-blue: ;
+
+  --border-style: #37415143;
+}
+
+/** Global Styles */
+* {
+  transition: 400ms ease-out all;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+
+  color: var(--headline);
+  font-size: 16px;
+  font-family: var(--font);
+  background-color: var(--bg);
+
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--paragraph);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/** Components Styles */
+.container {
+  position: relative;
+  padding: 0px 16px;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.section-tmpl {
+  position: relative;
+  top: 0; left: 0; right: 0;
+  z-index: 99;
+  z-index: 1;
+  width: 100%;
+  margin: 52px 0;
+}
+
+.button-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.button-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid var(--dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--headline);
+}
+
+.tittle {
+  padding: 32px 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.headline {
+  cursor: pointer;
+  margin: 6px 0 16px 0;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.border-color {
+  border-color: var(--border-style);
+}
+
+.border-style {
+  border:2px solid var(--border-style);
+}
+
+.input-style {
+  padding: 6px 12px;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  background: var(--bg);
+  border: 2px solid var(--border-style);
+}
+
+/* NAVIGATION */
+.navigation {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 1.25rem 0;
+  border-bottom: 2px solid var(--border-style);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/** Animation Styles */
+.Animation-UpDown {
+  animation: up-down 2.5s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-32px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
